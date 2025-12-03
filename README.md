@@ -1,20 +1,25 @@
-Personal portfolio website for Dale Cosgrove — Food Safety Consultant.
+## Dale Cosgrove | Quality & Food Safety CV Site
 
-Quick start
+Single-page, static CV website with a bold professional aesthetic. Built with vanilla HTML, CSS, and JS so it can live on any static host (Netlify, Vercel, GitHub Pages, or basic file hosting).
 
-- Open `index.html` in your browser to preview locally.
-- Edit `index.html:21` `<title>` and meta tags as needed.
-- Replace all placeholder contact info with your own in `index.html:39`, `index.html:164`, and JSON-LD block near the end.
-- If you have a CV, place it at `docs/Dale-Cosgrove-CV.pdf` or update the link.
+### Structure
+- `index.html` - page markup and sections
+- `style.css` - layout and animations
+- `script.js` - timeline interactions, scroll reveals, micro-interactions
+- `assets/dale-portrait.png` - add your portrait image (used in the hero card)
 
-Customize
+### Getting Started
+1) Open `index.html` in a browser to preview locally.
+2) Add your portrait to `assets/dale-portrait.png` to populate the hero image.
+3) Update copy in `index.html` or colours in `style.css` as needed.
 
-- Content: All copy lives in `index.html` with clear section IDs.
-- Colors: Update CSS variables at the top of `styles.css`.
-- Favicon: Replace `assets/favicon.svg` if desired.
+### Hosting Options
+- Netlify: Drag-and-drop the folder onto https://app.netlify.com/drop or connect a repo with no build command.
+- Vercel: Import the repo/folder, choose “Other” for the framework, and use the project root as the output directory.
+- GitHub Pages: Push to a repo and enable Pages from the main branch with the root as the site folder.
+- Any static host: Upload the three files. No server-side code required.
 
-Deploy
-
-- GitHub Pages: push this folder to a repo and enable Pages.
-- Netlify/Vercel: drag & drop or connect the repo; no build step needed.
-
+### Notes
+- All animations are CSS/JS only; no dependencies or build step.
+- Theme is locked to light for consistency.
+- Scroll reveals use IntersectionObserver; experience timeline cards update the detail pane on click/tap.
